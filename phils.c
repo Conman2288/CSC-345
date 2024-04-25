@@ -1,4 +1,4 @@
-// Connor Heard & Emilio Elzar
+// Connor Heard & Emilio Elzahr
 
 #include <stdio.h>
 #include <stdlib.h>
