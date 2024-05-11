@@ -197,6 +197,8 @@ int main(int argc, char *argv[]) {
 
         // Print out seed generated page array
         if (DEBUG) {
+            printf("\n");
+            printf("Seed %d's reference string:\n", seed);
             for (int i = 0; i < arraySize; i++) {
                 printf("%d ", randomPages[i]);
             }
