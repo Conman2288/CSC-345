@@ -60,6 +60,8 @@ int fifo(int frameCount, int pageNumArray[], int arraySize) {
     return pageFaultCount;
 }
 
+//Implementation of the LRU (Least Recently Used) page to frame assignment algorithm.
+// Logic of this function gotten from: https://www.geeksforgeeks.org/program-for-least-recently-used-lru-page-replacement-algorithm/
 int lru(int frameCount, int pageNumArray[], int arraySize) {
     int frameArray[frameCount]; // Array to hold frames
     int recentAccess[frameCount]; // Array to track recent access
@@ -103,6 +105,8 @@ int lru(int frameCount, int pageNumArray[], int arraySize) {
     return pageFaultCount;
 }
 
+//Implementation of the Optimal page to frame assignment algorithm.
+// Logic of this function gotten from: https://www.geeksforgeeks.org/optimal-page-replacement-algorithm/
 int optimal(int frameCount, int pageNumArray[], int arraySize) {
     int frameArray[frameCount]; // Array to hold frames
     int pageFaultCount = 0;
